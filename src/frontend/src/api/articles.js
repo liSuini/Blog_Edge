@@ -33,3 +33,8 @@ export function deleteArticle(id) {
 export function updateArticleStatus(id, status) {
   return request.patch(`/admin/articles/${id}/status`, { status })
 }
+
+// 后台文章详情（含草稿）
+export function getAdminArticleDetail(id) {
+  return request.get(`/admin/articles/${id}`)
+}

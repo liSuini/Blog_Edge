@@ -134,8 +134,8 @@ watch(() => route.params.id, (newId) => {
 /* ---- 文章布局：左侧目录 + 右侧正文 ---- */
 .article-layout {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr);
-  gap: 20px;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 24px;
   align-items: start;
 }
 
@@ -146,7 +146,7 @@ watch(() => route.params.id, (newId) => {
 }
 
 /* ---- 响应式：窄屏隐藏目录 ---- */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .article-layout {
     grid-template-columns: 1fr;
   }

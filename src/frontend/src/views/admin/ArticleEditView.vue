@@ -84,7 +84,7 @@
 <script setup>
 import { ref, reactive, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { getArticleDetail, createArticle, updateArticle } from '@/api/articles'
+import { getArticleDetail, getAdminArticleDetail, createArticle, updateArticle } from '@/api/articles'
 import { getAdminCategories } from '@/api/categories'
 import { getAdminTags } from '@/api/tags'
 import { uploadImage } from '@/api/images'
@@ -129,7 +129,7 @@ async function loadArticle() {
   if (isNew.value) return
   loading.value = true
   try {
-    const res = await getArticleDetail(articleId.value)
+    const res = await getAdminArticleDetail(articleId.value)
     const a = res.data
     form.title = a.title || ''
     form.content = a.content || ''
