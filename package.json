@@ -1,0 +1,21 @@
+{
+  "name": "blog-edge",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Personal blog on EdgeOne Makers — Vue3 + Express + Blob Storage",
+  "scripts": {
+    "dev": "edgeone makers dev -n blog-edge",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "@edgeone/pages-blob": "^0.0.14",
+    "jsonwebtoken": "^9.0.2",
+    "bcrypt": "^5.1.1"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.0"
+  }
+}
