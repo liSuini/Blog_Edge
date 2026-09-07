@@ -6,11 +6,15 @@ export function uploadImage(file) {
     reader.onload = () => {
       const base64 = reader.result.split(',')[1]
       request
-        .post('/admin/images/upload', {
-          filename: file.name,
-          mimetype: file.type,
-          content: base64,
-        })
+        .post(
+          '/admin/images/upload',
+          {
+            filename: file.name,
+            mimetype: file.type,
+            content: base64,
+          },
+          { timeout: 60000 }
+        )
         .then(resolve)
         .catch(reject)
     }
