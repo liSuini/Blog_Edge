@@ -5,17 +5,32 @@
   "description": "Personal blog on EdgeOne Makers — Vue3 + Express + Blob Storage",
   "scripts": {
     "dev": "edgeone makers dev -n blog-edge",
-    "build": "vite build",
+    "build": "vite build --config src/frontend/vite.config.js",
     "test": "vitest run",
     "test:watch": "vitest"
   },
   "dependencies": {
-    "express": "^4.21.0",
     "@edgeone/pages-blob": "^0.0.14",
+    "@vscode/markdown-it-katex": "^1.1.2",
+    "axios": "^1.7.0",
+    "bcryptjs": "^3.0.3",
+    "express": "^4.21.0",
+    "highlight.js": "^11.10.0",
     "jsonwebtoken": "^9.0.2",
-    "bcrypt": "^5.1.1"
+    "katex": "^0.18.5",
+    "markdown-it": "^14.1.0",
+    "markdown-it-mark": "^4.0.0",
+    "md-editor-v3": "^4.20.0",
+    "pinia": "^2.2.0",
+    "vue": "^3.5.0",
+    "vue-router": "^4.4.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.0",
+    "vite": "^5.4.0",
     "vitest": "^2.1.0"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
   }
 }
