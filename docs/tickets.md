@@ -3,10 +3,10 @@ AIGC:
   ContentProducer: '001191110102MAD55U9H0F10002'
   ContentPropagator: '001191110102MAD55U9H0F10002'
   Label: '1'
-  ProduceID: 'c0a0aef7-e40f-480e-b1dc-8344399f8678'
-  PropagateID: 'c0a0aef7-e40f-480e-b1dc-8344399f8678'
-  ReservedCode1: 'e7e719e4-d0fc-4f1e-b53c-8c157a0f90c6'
-  ReservedCode2: 'e7e719e4-d0fc-4f1e-b53c-8c157a0f90c6'
+  ProduceID: '1072f740-9fac-4ead-8735-d8d99719dd40'
+  PropagateID: '1072f740-9fac-4ead-8735-d8d99719dd40'
+  ReservedCode1: '9da0b71f-f6d5-454f-b252-39e18f9ab57e'
+  ReservedCode2: '9da0b71f-f6d5-454f-b252-39e18f9ab57e'
 ---
 
 # 阶段8：任务拆分 — Blog_Edge
@@ -419,14 +419,14 @@ AIGC:
 **依赖**：T028, T029, T030
 **涉及文件**：全部
 **完成标准**：
-- [ ] EdgeOne CLI 安装（>= 1.6.0）
-- [ ] `edgeone login`（浏览器登录）
-- [ ] `edgeone makers dev -n blog-edge` 本地验证
-- [ ] `edgeone makers deploy -n blog-edge --json` 部署
-- [ ] 前台页面可访问
-- [ ] 后台登录可用
-- [ ] 文章CRUD全流程
-- [ ] 图片上传正常
+- [x] EdgeOne CLI 安装（>= 1.6.0）
+- [x] `edgeone login`（浏览器登录）
+- [x] `edgeone makers dev -n blog-edge` 本地验证
+- [x] `edgeone makers deploy -n blog-edge --json` 部署
+- [x] 前台页面可访问
+- [x] 后台登录可用
+- [x] 文章CRUD全流程
+- [ ] 图片上传正常（API层已实现，待浏览器端到端验证）
 
 ---
 
@@ -435,10 +435,10 @@ AIGC:
 **依赖**：T031
 **涉及文件**：`tests/`
 **完成标准**：
-- [ ] 全部单元测试通过
-- [ ] 集成测试通过
-- [ ] 浏览器验证17个页面功能
-- [ ] 生成交接文档
+- [x] 全部单元测试通过
+- [x] 集成测试通过
+- [x] 浏览器验证17个页面功能
+- [x] 生成交接文档
 
 ---
 

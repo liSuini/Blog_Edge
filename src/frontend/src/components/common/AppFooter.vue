@@ -1,7 +1,7 @@
 <template>
   <footer class="app-footer">
     <div class="container">
-      <p>&copy; {{ year }} {{ siteName }}. Powered by FastAPI + Vue3.</p>
+      <p>&copy; {{ year }} {{ siteName }}. Powered by EdgeOne + Vue3.</p>
     </div>
   </footer>
 </template>
